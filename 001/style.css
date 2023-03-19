@@ -1,0 +1,20 @@
+body{
+    background-image: url("pexels-ericson-fernandes-5575961.jpg");
+    height: 100vh;
+    background-color: rgb(74, 74, 139);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+main{
+    background-color: rgba(240, 248, 255, 0.274);
+    width: 400px;
+    padding: 30;
+    position:absolute;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
