@@ -9,38 +9,73 @@
     <title>Login</title>
 </head>
 <body>
-    <div id="page">
-        <header>Logo</header>
-        <main>
-            <div class="headline">
-                <h1>Acesse a plataforma</h1>
-                <p>
-                    Faça login ou registre-se para começar a construir seus projetos ainda hoje.
-                </p>
-            </div>
-            <form>
-                <div class="input-wrapper">
-                    <label for="email">E-mail:</label>
-                    <input id="email" type="email" required placeholder="Insira seu melhor E-mail">
+    <div id="page" class="flex">
+        <div>
+            <header>
+                <img src="assets/logo.svg" alt="">
+            </header>
+            <main>
+                <div class="headline">
+                    <h1>Acesse a plataforma</h1>
+                    <p>
+                        Faça login ou registre-se para começar a construir seus projetos ainda hoje.
+                    </p>
                 </div>
-                
-                <div class="input wrapper">
-                    <div class="label wrapper">
-                    <label for="senha">Senha:</label>
-                    <a href="#" target="blank">Esqueceu a senha?</a>
+                <form>
+                    <div class="input-wrapper">
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" required placeholder="Insira seu melhor E-mail">
                     </div>
-                    <input type="password" name="senha" id="senha" placeholder="********">
-                    <img class="show-password" src="" alt="">
-                    <img class="hide-password" src="" alt="">
-                </div>
-                <button type="submit">Entrar</button>
+            
+                    <div class="input-wrapper">
+                        <div class="label-wrapper flex">
+                        <label for="senha">Senha:</label>
+                        <a href="#" target="blank">Esqueceu a senha?</a>
+                        </div>
+                        <input
+                                type="password"
+                                id="senha"
+                                placeholder="Digite sua senha"
+                            />
 
-                <div class="create-account">Ainda não tem uma conta? <a href="#" target="blank">Inscreva-se</a></div>
-            </form>
-        </main>
-        <footer>
-            <p>Feito por <a href="https://github.com/Gracielle-Sampaio"target="blank">Gracielle Sampaio</a>, para o #Boracodar da <a href="https://www.rocketseat.com.br/boracodar"target="blank">Rocketseat</a></p>
-        </footer>
+                            <img
+                                onclick="togglePassword()"
+                                class="eye"
+                                src="./assets/eye.off.svg"
+                                alt=""
+                            />
+                            <img
+                                onclick="togglePassword()"
+                                class="eye hide"
+                                src="./assets/eye.svg"
+                                alt=""
+                            />
+                    </div>
+                    <button type="submit">Entrar</button>
+                    <div class="create-account">Ainda não tem uma conta? <a href="#" target="blank">Inscreva-se</a></div>
+                </form>
+            </main>
+        </div>
+
+        <img src="assets/bg.jpg" alt="">
+    
+        
     </div>
+    <footer>
+            <p>Feito por <a href="https://github.com/Gracielle-Sampaio"target="blank">Gracielle Sampaio</a>, para o #Boracodar da <a href="https://www.rocketseat.com.br/boracodar"target="blank">Rocketseat</a></p>
+    </footer>
+
+    <script>
+        function togglePassword() {
+          document
+            .querySelectorAll(".eye")
+            .forEach((eye) => eye.classList.toggle("hide"))
+  
+          const type =
+            senha.getAttribute("type") == "password" ? "text" : "password"
+  
+          senha.setAttribute("type", type)
+        }
+      </script>
 </body>
 </html>

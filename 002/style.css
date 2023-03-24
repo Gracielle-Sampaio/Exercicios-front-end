@@ -13,3 +13,93 @@
 body {
     font-size: 1.6rem;
 }
+button{
+    all:unset;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #7c3aed;
+}
+#page{
+    height: 100vh;
+}
+#page > *{
+    width: 50%;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.flex{
+    display: flex;
+}
+
+header img{
+  height: 5.4rem;  
+  width: 16rem;
+}
+#page > div{
+    padding: 4rem 11.2rem;
+}
+main{
+    margin-top: 11.4rem;
+}
+.headline{
+    max-width: 35rem;
+}
+form{
+    margin-top: 4rem;
+}
+.input-wrapper{
+    position: relative;
+}
+form input{
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 0.1rem solid #e2e8f0;
+    border-radius: 0.4rem;
+    padding: 1.6rem 1.2rem; 
+    margin: 0.8rem 0rem;
+}
+form .input-wrapper + .input-wrapper{
+    margin-top:1.6rem;
+}
+.label-wrapper{
+    justify-content: space-between;
+}
+::-ms-reveal{
+    display: none;
+}
+.eye{
+    width: 2rem;
+    height: 2rem;
+    position:absolute;
+    top:50%;
+    right: 5%;
+}
+.ride{
+    display: none;
+}
+form button{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    background-color: #7c3aed;
+    color: #fff;
+    width: 100%;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    margin-block: 3.2rem;
+}
+form button:active,
+form button:focus{
+    outline: 2px solid #7c3aed;
+    border-radius: 0.2rem;
+    
+}
+form button:hover{
+    background-color: #9f67ff;
+}
